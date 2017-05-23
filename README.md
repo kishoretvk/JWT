@@ -7,7 +7,7 @@ This library supports generating and decoding [JSON Web Tokens](http://tools.iet
 ## Installation
 Package is avaliable via [NuGet](https://nuget.org/packages/JWT). Or you can download and compile it yourself.
 
-## Supported .NET Framework versions
+## Supported .NET Frame work versions
 As of version 2.0, the lowest Supported version is 4.6.1
 
 ## Usage
@@ -122,3 +122,12 @@ IJsonSerializer serializer = new CustomJsonSerializer();
 IBase64UrlEncoder urlEncoder = new JwtBase64UrlEncoder();
 IJwtEncoder encoder = new JwtEncoder(algorithm, serializer, urlEncoder);
 ```
+
+
+
+
+and now aggind data compression, very soon will also add the encryption. 
+
+so we can achieve complete UI independent JWT tokens, seperation of conerns  is at high respect. !! 
+
+
